@@ -15,3 +15,7 @@ To see all the collections
 3.  mongo-password
 4.  use db
 5.  show collections
+
+### For application which is in the same docker network as the mongodb container
+
+MONGO_URI="mongodb://mongo-db-admin:mongo-password@<mongo_db_container_name>>:27017/db?authSource=admin"
